@@ -1,0 +1,577 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+body{
+	background-image:url('img/black-polka-dot-patterns.png');
+	background-repeat:repeat;
+	background-attachment:fixed;
+	overflow:scroll;
+}
+
+.main{
+	position:relative;
+    width:100%;
+    margin: 0 auto;
+}
+
+.middleDiv{
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	background-image:url(img/white.jpg);
+	
+}
+.middleDiv:after
+{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+.left{
+	width:30%;
+	float:left;
+	clear:both;
+}
+.left img {
+    margin: 0 auto;
+    display: block;
+}
+
+.right{
+	width:60%;
+	float:right;
+}
+
+.right h2{
+	color:#333333;
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0 auto;
+    display: block;
+	padding:3%;	
+}
+.right p{
+	color:#000;
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0 auto;
+    display: block;
+	padding:3%;
+}
+
+.pictures{
+	width:100%;
+	float:left;
+}
+.picture{
+	width:30%;
+	float:left;
+	padding:1%;	
+}
+.picture img{
+	padding-left:2em;
+}
+
+
+
+
+
+/*MENU and top*/
+.wrapper {
+    width: 80%;
+    height: 80px;
+    border-top: 2px solid #939393;
+
+	margin-left:auto;
+	margin-right:auto;
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #4A4A4A), color-stop(1, #000000));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top left, #4A4A4A 0%, #000000 100%);
+}
+
+
+.container{
+	float:right;
+	width:59%
+}
+.name{
+	float:left;
+	width:40%;
+}
+.name h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFFFFF;
+	padding-left:13%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+ul.menu {
+    height: 80px;
+    float:left;
+}
+ 
+ul.menu li {
+    list-style: none;
+    float:left;
+    height: 79px;
+    text-align: center;
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #4A4A4A), color-stop(1, #000000));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #4A4A4A 0%, #000000 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top left, #4A4A4A 0%, #000000 100%);
+	
+
+    }
+ 
+ul li a {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 79px;
+	color:#999999;
+	size:130%;
+	text-decoration:none;
+	font-weight:bold;
+    }
+ 
+ul li a:hover {
+    background: transparent none;
+	background-color:#666;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+ul li.active{
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(bottom right, #707070 0%, #383838 100%);
+
+/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom right, #707070 0%, #383838 100%);
+
+/* Opera */ 
+	background-image: -o-linear-gradient(bottom right, #707070 0%, #383838 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #707070), color-stop(1, #383838));
+
+/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom right, #707070 0%, #383838 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top left, #707070 0%, #383838 100%);
+	
+}
+
+ul li.active a{
+	color:#FFF;
+}
+
+
+
+div.skill{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.skill img{
+	width:100%;
+	height:250px;
+}
+
+div.skill:after
+{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+.skillButton{
+	background-image:url(img/better.jpg);
+	width:20%;
+	border:2px solid;
+	border-radius:25px;
+	color:#FFFFFF;
+	padding:1em;
+	font-size:150%;
+}
+
+
+.skillButton:hover{
+	background-image:url(img/white.jpg);
+	color:#000;
+}
+
+
+.skillList{
+	display:none;
+	border-style: solid;
+    border-width: 2px;
+	background-color:#FFFFFF;	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-image:url(img/white.jpg);
+}
+
+.skillList p{
+	font-family:Verdana, Geneva, sans-serif;
+	size:120%;
+	padding:5em;
+}
+
+/*****javascript CSS**/
+
+.alert {
+    top: 25%;
+    left:30%;
+	right:60%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 500px;
+	position: absolute;
+	font-family:Verdana, Geneva, sans-serif;
+	padding-left:1em;
+	padding-right:1em;
+	background-image:url(img/better.jpg);
+	box-shadow:2px 2px 10px 10px #C9C9C9;
+	-webkit-box-shadow:2px 2px 10px 10px #C9C9C9;
+	-moz-box-shadow:2px 2px 10px 10px #C9C9C9;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+
+}
+
+
+
+.alert:after
+{
+	content:".";
+	display:block;
+	clear:both;
+}
+
+.alert h1{
+	color:#0C3;
+	size:70%;
+}
+
+.alert h5{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:110%;
+	color:#999;
+}
+
+.alert p{
+	color:#FFFFFF;
+
+}
+
+.alert a{
+	color:#0CC;
+	text-decoration:none;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+	
+}
+.alert a:hover{
+	text-decoration:underline;
+}
+
+#box
+{
+        width: 150px;
+        height: 150px;
+        background: #FFF;
+        border: red dotted 5px;
+        text-align: center;
+        position: fixed;
+        margin-left: -75px;
+        margin-top: -75px;
+        left: 50%;
+        top: 50%;
+        z-index: 20;
+        display: none;
+}
+
+.screen
+{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #000;
+}
+/*****************************
+			Footer
+****************************/
+footer{
+	width:80%;
+	background-image:url('img/dots.jpg');
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+footer h1{
+	color:#FFFFFF;
+	font-family:Verdana, Geneva, sans-serif;
+	padding-top:1%;
+}
+
+footer p{
+	font-weight:bold;
+	font-size: 120%;
+	color:#FFFFFF;
+	font-family:Verdana, Geneva, sans-serif;
+	padding-bottom:1%;
+}
+footer a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+footer a:hover{
+	text-decoration:underline;
+}
+/*****************************
+			Section for skill img. Credits go to http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/
+****************************/
+.pictureContainer{
+	position:relative;
+	float:right;
+	clear: both;
+	
+	padding-left:10%;
+}
+
+.view {
+   width: 40%;
+   height: 290px;
+   margin: 10px;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+   
+}
+.view .mask,.view .content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   size: 1em;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   size:.7em;
+   position: relative;
+   color: #fff;
+   padding: 10px 20px 20px;
+   text-align: center;
+
+}
+
+.view h3{
+	position: relative;
+	padding: 10px 20px 20px;
+	color:#CCC;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: left;
+	font-size:90%;
+	text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.8);
+	margin: 20px 0 0 0;
+	text-align: center;
+}
+.view ul{
+	width:85%;
+	padding: 10px 20px 20px;
+	margin-left:auto;
+	margin-right:auto;
+	list-style-type:none;
+}
+.view li{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:white;
+	padding:10px;
+	text-align:left;
+	font-size:100%;
+	color:#FFF;
+}
+
+
+.view button.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+}
+.view a.info: hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+.view-first img {
+	 width: 100%;
+   height: 100%;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(41, 40, 40, 0.85);
+    transition: all 0.4s ease-in-out;
+	overflow:scroll;
+	scroll-x:hidden;
+}
+.view-first h2 {
+   -webkit-transform: translateY(-100px);
+   -moz-transform: translateY(-100px);
+   -o-transform: translateY(-100px);
+   -ms-transform: translateY(-100px);
+   transform: translateY(-100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-first p {
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.view-first:hover img {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   -o-transform: scale(1.1,1.1);
+   -ms-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);
+}
+.view-first button.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover button.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+}
+.view-first:hover p {
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+.view-first:hover button.info {
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+

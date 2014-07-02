@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php $_SESSION['id'] = 'skill'; 
+$ID = $_SESSION['id'];?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<LINK href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>‌​
+    <script src="javascript.js"></script>
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+		  $("#menuSkill").click(function(){
+			 $("#indexDiv").slideUp();
+		    $("#skillDiv").slideDown();
+			<?php $_SESSION['id'] = 'Skill'; ?>
+			var ID = '<?php $_SESSION['ID'] ?>';
+			alert(ID);
+  			  });
+		  });
+		  
+		 $(document).ready(function(){
+		  $("#menuProject").click(function(){
+			  
+		    $("#projectDiv").slideDown();
+			 $("#menuProject").load(changeActiveLink());
+			 <?php $_SESSION['id'] = 'Project'; ?>
+  			  });
+		  });
+		  
+		 $(document).ready(function(){
+		  $("#menuIndex").click(function(){
+		    $("#indexDiv").slideDown();
+			 <?php $_SESSION['id'] = 'Index'; 
+			?>
+  			  });
+		  });
+		  
+		  function changeActiveLink() {
+			  var currentLocation = window.location.href;
+			  currentLocation = currentLocation.replace('//', '/').split('/');
+			  var page = currentLocation[currentLocation.length - 1];
+
+			  //for changing the class
+			  //document.getElementById("MyID").className =
+		      //document.getElementById("MyID").className.replace(/\bMyClass\b/,'');
+			}
+		  </script>
+          <!--This Script is for the skill page-->
+          <script type="text/javascript">
+		$(document).ready(function(){
+		  $("#CPlus").click(function(){
+		    $("#cpp").fadeToggle(300);
+
+		  });
+		   $("#Java").click(function(){
+		    $("#jav").fadeToggle(300);
+
+		  });
+		  $("#HTML").click(function(){
+		    $("#htm").fadeToggle(300);
+
+		  });
+		  $("#CSS").click(function(){
+		    $("#casc").fadeToggle(300);
+
+		  });
+		  $("#PHP").click(function(){
+		    $("#ph").fadeToggle(300);
+
+		  });
+		  $("#SQL").click(function(){
+		    $("#Sq").fadeToggle(300);
+
+		  });
+		  $("#JQ").click(function(){
+		    $("#js").fadeToggle(300);
+
+		  });
+		});
+	</script>
+	<title>Portolio of Steve S Choo</title>
+    
+</head>
+
+
+<body>
+	<div class="wrapper">
+        	<div class="name">
+            	<h1>STEVECHOO</h1>
+	        </div>
+	        <div class="container">
+	            <ul class="menu">
+	                <li id="menuIndex" class="active"><a href="index.php">Home</a></li>
+                    <li id="menuSkill"><a href="#skillDiv">Skill</a></li>
+	                <li id="menuProject"><a href="#projectDiv">Projects</a></li>
+	                <li><a href="Resume.pdf">Resume</a></li>
+	            </ul>
+	        </div>
+	    </div> <!-- end of wrapper-->
+	<div id="indexDiv" class="middleDiv">
+		
+        
+        <div class="main">
+        	<div class="left">
+				<img src="img/profile.png" width="180" height="200" alt="Picture of Steve Choo" style="padding-top:10%;"/>
+            </div>
+            <div class="right">
+            	<h2>Software Engineer, Web Developer</h2>
+				<br />
+            	<p>Hello there. My name is Steve Choo, well my real name is Seungbeom but no one can pronounce it anyway. Got nothing to say for now. Just a test</p>
+				<p>Here is my LinkedIn link.&nbsp; &nbsp;&nbsp;<a href="https://www.linkedin.com/profile/view?id=347046895&trk=spm_pic"><img src="img/linked in.png" width="10%" height="10%" alt="LinkedIn Logo"/></a></p>
+            </div>
+        </div>    
+                
+     </div>
+     <div id="skillDiv" class="middleDiv" style="display:none;">
+    		<?php
+            	include 'skills.html';
+	        ?>
+        </div>
+        
+	    <div id="projectDiv" class="middleDiv" style="display:none;">
+	        <?php
+	           	include 'projects.html';
+	        ?>
+	    </div>
+</body>
+<div style="clear:both"></div>
+<footer>
+	<h1>Contact</h1>
+	<p>Email: <a href="mailto:chooseun@gmail.com">chooseun@gmail.com</a>   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;     Phone: 517-897-0578</p>
+    
+</footer>
+
+</html>
